@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buy new product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body>
+    <section>
+      <div class="product">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.daraz.pk%2Fproducts%2Fhandbags3-piece-handbag-set-women-trendswomen-handbag-shoulder-bagscrossbody-bagswallet-chain-bags-i342104363.html&psig=AOvVaw1VqeR9OSiwSfyIWMXzR-Qt&ust=1727789482961000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiw9-Tj6ogDFQAAAAAdAAAAABAE" alt="ladies handbag" />
+        <div class="description">
+          <h3>HandBag</h3>
+          <h5>$20.00</h5>
+        </div>
+      </div>
+      <form action="http://localhost:3000/api/v1/payment/create-checkout-session" method="POST">
+        <button type="submit" id="checkout-button">Checkout</button>
+      </form>
+    </section>
+  </body>
+</html>
